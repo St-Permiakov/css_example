@@ -1,0 +1,140 @@
+.auth-form button {
+    padding: 0;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    user-select: none;
+    cursor: pointer;
+}
+
+.auth-form input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* bootstrap partial */
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+/* form */
+
+.form__item:not(:last-child) { margin: 0 0 20px; }
+
+/* input-group */
+
+.input-group {}
+
+.input-group__label {
+    display: inline-block;
+    min-height: 20px;
+    margin: 0 0 5px;
+    font-size: 14px;
+}
+
+.input-group__inner {
+    position: relative;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-group__input {
+    width: 100%;
+}
+
+button.input-group__reveal-btn {
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/eye-closed.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    user-select: none;
+    transition: background 100ms;
+}
+
+button.input-group__reveal-btn:active {
+    background-image: url('../images/eye-open.svg');
+}
+
+button.input-group__reveal-btn:focus-visible {
+    outline: none;
+    background-color: #f3f6f6;
+}
+
+/* input */
+
+input.input {
+    height: 50px;
+    padding: 10px 15px;
+    border: 1px solid #e0e7e8;
+    color: #444a52;
+    transition: border 250ms;
+}
+
+input.input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #9da4aa;
+}
+
+input.input::placeholder {
+    color: #caced2;
+}
+
+input.input:focus, input.input:hover {
+    outline: none;
+    border-color: #9da4aa;
+}
+
+/* button */
+
+button.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    transition: background 250ms, border 250ms, color 250ms;
+}
+
+button.btn--red {
+    color: white;
+    background-color: #6495ED;
+    fill: color('white');
+}
+
+button.btn--red:hover, .btn--red:focus-visible {
+    background-color: #4682B4;
+}
+
+button.btn--red:active {
+    background-color: #30618a;
+}
+
+button.btn--lg {
+    height: 50px;
+}
